@@ -51,7 +51,7 @@ This is a **public-facing portfolio** that showcases multiple internal software 
 ### 🤖 CERBERUS
 **Cummings Electrical Robotic Breaker & Equipment Recognition Unified System**
 
-An automated robotic system that captures high-resolution images of electrical panels using a 6-DOF robotic arm and linear gantry, then applies YOLO object detection and OCR to identify breaker part numbers and phases. Features a multi-model AI pipeline with local LLM inference and cloud fallback. Computer vision model training pipelines help expidite inference systems to match exact needs for vision processing.
+An automated robotic system that captures high-resolution images of electrical panels using a 6-DOF robotic arm and linear gantry, then applies YOLO object detection and OCR to identify breaker part numbers and phases. Features a multi-model AI pipeline with local LLM inference and cloud fallback. Computer vision model training pipelines help expedite inference systems to match exact needs for vision processing.
 
 **Key Outcomes:**
 - Eliminates manual image documentation and annotation (hours → minutes)
