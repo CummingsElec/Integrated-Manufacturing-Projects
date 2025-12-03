@@ -1,0 +1,132 @@
+{
+  "portfolio": {
+    "name": "Integrated Manufacturing Projects",
+    "description": "Internal software projects for industrial automation, computer vision, and mobile tooling",
+    "maintainer": "Jacob Yount",
+    "last_updated": "2025-12-03"
+  },
+  "projects": [
+    {
+      "id": "cerberus",
+      "name": "CERBERUS",
+      "full_name": "Cummings Electrical Robotic Breaker & Equipment Recognition Unified System",
+      "tagline": "Automated robotic electrical panel documentation",
+      "description": "An automated system combining robotic arm control, linear gantry positioning, and AI-powered vision to document electrical panels. Uses YOLO object detection and OCR to identify breaker part numbers and phases.",
+      "status": "active_development",
+      "tech_stack": [
+        "Python 3.10+",
+        "YOLOv8",
+        "PyTorch",
+        "OpenCV",
+        "Raspberry Pi",
+        "Arduino PLC",
+        "LeRobot (HuggingFace)"
+      ],
+      "categories": [
+        "robotics",
+        "computer_vision",
+        "edge_ai",
+        "automation"
+      ],
+      "highlights": [
+        "6-DOF robotic arm with precise camera positioning",
+        "Custom YOLO models for 15+ breaker classes",
+        "Multi-model AI pipeline with local/cloud fallback",
+        "Edge processing on Raspberry Pi"
+      ],
+      "folder": "Projects/CERBERUS"
+    },
+    {
+      "id": "cummings-cv",
+      "name": "Cummings CV",
+      "full_name": "Cummings Computer Vision System",
+      "tagline": "Enterprise video analytics for industrial safety",
+      "description": "A production-grade video analytics platform for industrial monitoring, safety compliance, and visual data capture. Integrates with multi-channel NVR systems supporting 8 simultaneous camera feeds with real-time AI inference.",
+      "status": "production",
+      "tech_stack": [
+        "Python 3.10+",
+        "Flask",
+        "YOLOv11-Large",
+        "ByteTrack",
+        "OpenCV",
+        "MediaPipe"
+      ],
+      "categories": [
+        "computer_vision",
+        "safety",
+        "industrial_monitoring",
+        "web_application"
+      ],
+      "highlights": [
+        "8-channel live monitoring with real-time inference",
+        "Instance segmentation for privacy-preserving anonymization",
+        "YOLOv11-Large with 27.6M parameters",
+        "Web-based dashboard with camera selector"
+      ],
+      "folder": "Projects/Cummings_CV"
+    },
+    {
+      "id": "orion",
+      "name": "ORION",
+      "full_name": "Operational Recognition Intelligence and Observation Network",
+      "tagline": "Multi-camera AI vision platform for safety and analytics",
+      "description": "An AI-powered vision system for industrial safety monitoring, personnel tracking, and workflow analytics. Features hybrid edge/cloud processing with Raspberry Pi + Hailo AI accelerator for real-time detection.",
+      "status": "active_development",
+      "tech_stack": [
+        "Python 3.10+",
+        "FastAPI",
+        "PostgreSQL",
+        "Redis",
+        "Docker",
+        "Hailo AI",
+        "YOLOv8",
+        "ByteTrack"
+      ],
+      "categories": [
+        "computer_vision",
+        "edge_ai",
+        "safety",
+        "workflow_analytics",
+        "distributed_systems"
+      ],
+      "highlights": [
+        "Hybrid edge/cloud architecture",
+        "Cross-camera tracking with persistent IDs",
+        "Hailo AI accelerator integration (26 TOPS)",
+        "Real-time TV dashboard via HDMI output"
+      ],
+      "folder": "Projects/ORION"
+    },
+    {
+      "id": "panel-scanner-ios",
+      "name": "Panel Scanner iOS",
+      "full_name": "Panel Scanner V3",
+      "tagline": "Real-time electrical panel detection on iOS",
+      "description": "A professional iOS application for electrical contractors featuring on-device ML inference, AR visualization, and smart OCR for panel identification. Exports synchronized video recordings with structured JSON/CSV data.",
+      "status": "production",
+      "tech_stack": [
+        "Swift 5.9",
+        "SwiftUI",
+        "CoreML",
+        "Vision",
+        "ARKit",
+        "YOLOv8-Large"
+      ],
+      "categories": [
+        "mobile",
+        "ios",
+        "computer_vision",
+        "augmented_reality",
+        "field_tools"
+      ],
+      "highlights": [
+        "30 FPS on-device inference with Neural Engine",
+        "AR mode with floating 3D labels",
+        "Smart OCR with user confirmation",
+        "Video + JSON/CSV synchronized export"
+      ],
+      "folder": "Projects/Panel_Scanner_IOS"
+    }
+  ]
+}
+
