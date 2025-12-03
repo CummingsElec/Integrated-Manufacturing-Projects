@@ -35,14 +35,70 @@ This is a **public-facing portfolio** that showcases multiple internal software 
 
 ---
 
-## Projects at a Glance
+## Project Showcase
 
-| Project | Description | Tech Stack | Status |
-|---------|-------------|------------|--------|
-| [**CERBERUS**](Projects/CERBERUS/) | Robotic system for automated electrical panel documentation | Python, YOLO, Robotics, Edge AI | Active Development |
-| [**Cummings CV**](Projects/Cummings_CV/) | Enterprise video analytics platform for industrial safety | Python, Flask, YOLOv11, ByteTrack | Production |
-| [**ORION**](Projects/ORION/) | Multi-camera AI vision platform with edge/hybrid processing | Python, FastAPI, Docker, Hailo AI | Active Development |
-| [**Panel Scanner iOS**](Projects/Panel_Scanner_IOS/) | Mobile app for real-time electrical panel detection | Swift, SwiftUI, CoreML, ARKit | Production |
+<table>
+<tr>
+<td width="50%" align="center">
+
+<a href="Projects/CERBERUS/">
+<img src="Asthetics/Cerberus.png" alt="CERBERUS" width="100%"/>
+</a>
+
+**[CERBERUS](Projects/CERBERUS/)**<br/>
+*Robotic Panel Documentation*
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![YOLO](https://img.shields.io/badge/YOLO-00FFFF?style=flat-square)
+![Robotics](https://img.shields.io/badge/Robotics-9C27B0?style=flat-square)
+
+</td>
+<td width="50%" align="center">
+
+<a href="Projects/Cummings_CV/">
+<img src="Asthetics/Thundercats_Cummings_CV.jpg" alt="Cummings CV" width="100%"/>
+</a>
+
+**[Cummings CV](Projects/Cummings_CV/)**<br/>
+*Industrial Video Analytics*
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![YOLO](https://img.shields.io/badge/YOLOv11-00FFFF?style=flat-square)
+![Flask](https://img.shields.io/badge/Flask-000?style=flat-square&logo=flask)
+
+</td>
+</tr>
+<tr>
+<td width="50%" align="center">
+
+<a href="Projects/ORION/">
+<img src="Asthetics/Watcher.png" alt="ORION" width="100%"/>
+</a>
+
+**[ORION](Projects/ORION/)**<br/>
+*Multi-Camera AI Platform*
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Hailo](https://img.shields.io/badge/Hailo_AI-FF6F00?style=flat-square)
+
+</td>
+<td width="50%" align="center">
+
+<a href="Projects/Panel_Scanner_IOS/">
+<img src="Asthetics/Panel_scanner_IOS.png" alt="Panel Scanner iOS" width="200"/>
+</a>
+
+**[Panel Scanner iOS](Projects/Panel_Scanner_IOS/)**<br/>
+*Mobile Panel Detection App*
+
+![Swift](https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=swift&logoColor=white)
+![CoreML](https://img.shields.io/badge/CoreML-00C7B7?style=flat-square)
+![ARKit](https://img.shields.io/badge/ARKit-007AFF?style=flat-square)
+
+</td>
+</tr>
+</table>
 
 ---
 

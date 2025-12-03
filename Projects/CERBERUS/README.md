@@ -1,8 +1,19 @@
+<div align="center">
+
+<img src="../../Asthetics/Cerberus.png" alt="CERBERUS Banner" width="100%"/>
+
 # CERBERUS
 
 **Cummings Electrical Robotic Breaker & Equipment Recognition Unified System**
 
 > Automated robotic system for documenting electrical panels using computer vision and multi-model AI
+
+[![Status](https://img.shields.io/badge/Status-Active_Development-blue?style=flat-square)](#)
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white)](#)
+[![YOLO](https://img.shields.io/badge/YOLO-v8-00FFFF?style=flat-square)](#)
+[![Robotics](https://img.shields.io/badge/Robotics-6--DOF-9C27B0?style=flat-square)](#)
+
+</div>
 
 ---
 

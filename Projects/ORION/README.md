@@ -1,8 +1,19 @@
+<div align="center">
+
+<img src="../../Asthetics/Watcher.png" alt="ORION Banner" width="100%"/>
+
 # ORION
 
 **Operational Recognition Intelligence and Observation Network**
 
 > Multi-camera AI vision platform for safety monitoring, personnel tracking, and workflow analytics
+
+[![Status](https://img.shields.io/badge/Status-Active_Development-blue?style=flat-square)](#)
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white)](#)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)](#)
+[![Hailo](https://img.shields.io/badge/Hailo-26_TOPS-FF6F00?style=flat-square)](#)
+
+</div>
 
 ---
 

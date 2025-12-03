@@ -1,8 +1,19 @@
+<div align="center">
+
+<img src="../../Asthetics/Thundercats_Cummings_CV.jpg" alt="Cummings CV Banner" width="100%"/>
+
 # Cummings CV
 
 **Enterprise Computer Vision System for Industrial Safety & Monitoring**
 
 > Production-grade video analytics platform with real-time AI inference across multi-channel camera feeds
+
+[![Status](https://img.shields.io/badge/Status-Production-success?style=flat-square)](#)
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white)](#)
+[![YOLO](https://img.shields.io/badge/YOLO-v11--Large-00FFFF?style=flat-square)](#)
+[![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)](#)
+
+</div>
 
 ---
 

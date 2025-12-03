@@ -1,8 +1,19 @@
+<div align="center">
+
+<img src="../../Asthetics/Panel_scanner_IOS.png" alt="Panel Scanner iOS Banner" width="300"/>
+
 # Panel Scanner iOS
 
 **Real-Time Electrical Panel Detection & Inventory**
 
 > Professional iOS application for electrical contractors with on-device ML, AR visualization, and smart data capture
+
+[![Status](https://img.shields.io/badge/Status-Production-success?style=flat-square)](#)
+[![Swift](https://img.shields.io/badge/Swift-5.9-F05138?style=flat-square&logo=swift&logoColor=white)](#)
+[![iOS](https://img.shields.io/badge/iOS-17.0+-007AFF?style=flat-square&logo=apple&logoColor=white)](#)
+[![CoreML](https://img.shields.io/badge/CoreML-Neural_Engine-00C7B7?style=flat-square)](#)
+
+</div>
 
 ---
 
