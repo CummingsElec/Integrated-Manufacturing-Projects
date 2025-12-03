@@ -51,11 +51,11 @@ This is a **public-facing portfolio** that showcases multiple internal software 
 ### 🤖 CERBERUS
 **Cummings Electrical Robotic Breaker & Equipment Recognition Unified System**
 
-An automated robotic system that captures high-resolution images of electrical panels using a 6-DOF robotic arm and linear gantry, then applies YOLO object detection and OCR to identify breaker part numbers and phases. Features a multi-model AI pipeline with local LLM inference and cloud fallback.
+An automated robotic system that captures high-resolution images of electrical panels using a 6-DOF robotic arm and linear gantry, then applies YOLO object detection and OCR to identify breaker part numbers and phases. Features a multi-model AI pipeline with local LLM inference and cloud fallback. Computer vision model training pipelines help expidite inference systems to match exact needs for vision processing.
 
 **Key Outcomes:**
-- Eliminates manual panel documentation (hours → minutes)
-- Custom YOLO models trained for 15+ breaker classes
+- Eliminates manual image documentation and annotation (hours → minutes)
+- Custom YOLO models trained for 15+ breaker classes, trainable for any CV task
 - Edge processing via Raspberry Pi for on-site deployments
 
 📁 [View Project Details →](Projects/CERBERUS/)
@@ -174,7 +174,7 @@ As the **sole developer** on these projects, I am responsible for:
 For questions about these projects or collaboration opportunities:
 
 **Jacob Yount**  
-*Software Engineer — Industrial Automation & AI*
+*R&D Engineer — Industrial Automation & AI*
 
 ---
 
@@ -186,7 +186,6 @@ For questions about these projects or collaboration opportunities:
 
 <br/>
 
-![Made with ❤️](https://img.shields.io/badge/Made_with-❤️-red?style=flat-square)
 
 </div>
 
