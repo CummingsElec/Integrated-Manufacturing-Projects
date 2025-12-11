@@ -3,7 +3,7 @@
     "name": "Integrated Manufacturing Projects",
     "description": "Internal software projects for industrial automation, computer vision, and mobile tooling",
     "maintainer": "Jacob Yount",
-    "last_updated": "2025-12-03"
+    "last_updated": "2024-12-11"
   },
   "projects": [
     {
@@ -69,31 +69,44 @@
       "id": "orion",
       "name": "ORION",
       "full_name": "Operational Recognition Intelligence and Observation Network",
-      "tagline": "Multi-camera AI vision platform for safety and analytics",
-      "description": "An AI-powered vision system for industrial safety monitoring, personnel tracking, and workflow analytics. Features hybrid edge/cloud processing with Raspberry Pi + Hailo AI accelerator for real-time detection.",
-      "status": "active_development",
+      "tagline": "Advanced multi-camera AI vision platform for safety and analytics",
+      "description": "Production-grade AI vision system combining live stream monitoring and batch video processing. Features YOLOv11-Large models, ByteTrack persistent tracking, and two-pass processing for 2-5x speed improvements. Planned hybrid edge/cloud architecture with Hailo AI accelerator.",
+      "status": "production",
+      "version": "1.2",
       "tech_stack": [
-        "Python 3.10+",
-        "FastAPI",
-        "PostgreSQL",
-        "Redis",
+        "Python 3.11",
+        "Flask",
+        "FastAPI (Planned)",
+        "YOLOv11-Large",
+        "YOLOv11-Large-seg",
+        "ByteTrack",
+        "OpenCV",
+        "PyTorch",
+        "Ultralytics",
+        "PostgreSQL (Planned)",
+        "Redis (Planned)",
         "Docker",
-        "Hailo AI",
-        "YOLOv8",
-        "ByteTrack"
+        "Hailo AI (Planned)"
       ],
       "categories": [
         "computer_vision",
         "edge_ai",
         "safety",
         "workflow_analytics",
+        "video_processing",
         "distributed_systems"
       ],
       "highlights": [
-        "Hybrid edge/cloud architecture",
-        "Cross-camera tracking with persistent IDs",
-        "Hailo AI accelerator integration (26 TOPS)",
-        "Real-time TV dashboard via HDMI output"
+        "Dual modes: Live monitoring + batch video processing",
+        "Two-pass processing: 2-5x faster than traditional methods",
+        "YOLOv11-Large with 51M parameters for superior accuracy",
+        "Instance segmentation with colored masks for people",
+        "ByteTrack integration for persistent cross-frame IDs",
+        "HTML detection reports with timelines",
+        "Comprehensive logging system",
+        "8-camera DVR integration via RTSP/HTTPS",
+        "Planned: Hailo AI accelerator (26 TOPS) on Raspberry Pi",
+        "Planned: Cross-camera tracking with TV dashboard"
       ],
       "folder": "Projects/ORION"
     },

@@ -24,14 +24,14 @@
 
 ## What Is This Repository?
 
-This is a **public-facing portfolio** that showcases multiple internal software projects I've built and maintain. The actual source code lives in private repositories—this repo serves as a curated presentation of:
+This is a **public-facing portfolio** showcasing production software systems I've architected, developed, and deployed for industrial automation and computer vision applications. The actual source code resides in private repositories—this repository serves as a curated technical presentation of:
 
-- **What each project does** and why it matters
-- **Technical architecture** and tooling decisions
-- **My contributions** as the primary developer
-- **Business value** delivered to the organization
+- **System Architecture & Design** — Technology decisions, data flow, and scalability patterns
+- **Technical Implementation** — Full-stack development across Python, Swift, embedded systems
+- **Business Impact** — Measurable outcomes, efficiency gains, and ROI delivered
+- **Production Deployment** — Real-world systems running 24/7 in industrial environments
 
-> 💡 This portfolio is designed to be readable by both technical reviewers and non-technical leadership.
+**Portfolio Philosophy:** This showcase balances technical depth for engineering reviewers with clear business outcomes for leadership and stakeholders. Each project includes architecture diagrams, technology justifications, and concrete results.
 
 ---
 
@@ -104,7 +104,7 @@ This is a **public-facing portfolio** that showcases multiple internal software 
 
 ## Project Summaries
 
-### 🤖 CERBERUS
+### CERBERUS
 **Cummings Electrical Robotic Breaker & Equipment Recognition Unified System**
 
 An automated robotic system that captures high-resolution images of electrical panels using a 6-DOF robotic arm and linear gantry, then applies YOLO object detection and OCR to identify breaker part numbers and phases. Features a multi-model AI pipeline with local LLM inference and cloud fallback. Computer vision model training pipelines help expedite inference systems to match exact needs for vision processing.
@@ -118,7 +118,7 @@ An automated robotic system that captures high-resolution images of electrical p
 
 ---
 
-### 📹 Cummings CV
+### Cummings CV
 **Enterprise Computer Vision for Industrial Safety & Monitoring**
 
 A production-grade video analytics platform integrating with multi-channel NVR systems for real-time AI inference. Supports person detection, instance segmentation, pose estimation, and persistent object tracking across 8 simultaneous camera feeds.
@@ -132,21 +132,24 @@ A production-grade video analytics platform integrating with multi-channel NVR s
 
 ---
 
-### 🛰️ ORION
+### ORION
 **Operational Recognition Intelligence and Observation Network**
 
-A next-generation AI vision platform combining edge computing (Raspberry Pi + Hailo AI accelerator) with centralized backend processing for safety monitoring, cross-camera personnel tracking, and workflow analytics at scale.
+A production-grade AI vision platform delivering live stream monitoring and intelligent batch video processing. Features YOLOv11-Large models with instance segmentation, ByteTrack multi-object tracking, and innovative two-pass processing for 2-5x speed improvements. Planned expansion includes edge computing with Hailo AI accelerators and cross-camera tracking.
 
 **Key Outcomes:**
-- Hybrid edge/cloud architecture for optimal latency and throughput
-- Cross-camera tracking with persistent ID assignment
-- Real-time TV dashboard output via HDMI from edge device
+- Dual operating modes: Real-time monitoring + batch processing
+- Two-pass workflow: Separate inference from rendering for massive speedup
+- YOLOv11-Large (51M params) with colored segmentation masks
+- HTML detection reports with comprehensive timelines and metrics
+- 8-camera DVR integration via RTSP/HTTPS streams
+- **Planned:** Hybrid edge/cloud with Raspberry Pi + Hailo-8 (26 TOPS)
 
 📁 [View Project Details →](Projects/ORION/)
 
 ---
 
-### 📱 Panel Scanner iOS
+### Panel Scanner iOS
 **Mobile Electrical Panel Detection & Inventory App**
 
 A professional iOS application for electrical contractors featuring 30 FPS on-device ML inference, AR visualization mode, and smart OCR for panel identification. Exports synchronized video recordings with structured JSON/CSV data.
@@ -163,34 +166,40 @@ A professional iOS application for electrical contractors featuring 30 FPS on-de
 ## Technical Highlights
 
 ### Computer Vision & Machine Learning
-- Custom YOLO models (v8, v11) trained for domain-specific detection classes
-- On-device inference using CoreML (iOS) and Hailo AI accelerator (Raspberry Pi)
-- Multi-object tracking with ByteTrack for persistent ID assignment
-- Instance segmentation for privacy-preserving person anonymization
+- **Custom YOLO Models** — YOLOv8 and YOLOv11-Large (up to 51M parameters) trained for domain-specific detection
+- **Instance Segmentation** — Pixel-accurate masks for privacy-preserving person detection and tracking
+- **Multi-Object Tracking** — ByteTrack integration for persistent ID assignment across frames
+- **On-Device Inference** — CoreML (iOS Neural Engine) and Hailo AI accelerator (26 TOPS) optimization
+- **Transfer Learning** — Custom training pipelines for specialized industrial detection tasks
 
 ### Edge AI & Embedded Systems
-- Raspberry Pi 5 deployments with dedicated AI accelerators (26 TOPS)
-- Real-time inference at 10-30 FPS depending on model complexity
-- Hybrid processing: edge inference + centralized heavy compute
-- Industrial hardware integration (PLCs, robotic arms, motorized gantries)
+- **Raspberry Pi 5 Edge Computing** — 16GB RAM with dedicated Hailo-8 AI accelerator
+- **Real-Time Performance** — 10-30 FPS inference depending on model complexity and hardware
+- **Hybrid Architecture** — Edge inference for latency-critical tasks + cloud for heavy processing
+- **Industrial Integration** — PLCs, robotic arms, motorized gantries, and IP camera systems
+- **30TB Local Storage** — On-site data retention for edge devices
 
 ### iOS & Mobile Development
-- SwiftUI + Combine for reactive, modern iOS architecture
-- CoreML integration with Neural Engine optimization
-- ARKit for augmented reality overlay visualization
-- Enterprise SSO integration (Microsoft Entra ID / Okta)
+- **Modern Swift Architecture** — SwiftUI + Combine for reactive, maintainable codebases
+- **Neural Engine Optimization** — CoreML models running at 30 FPS on-device
+- **Augmented Reality** — ARKit integration with floating 3D labels and spatial tracking
+- **Enterprise SSO** — Microsoft Entra ID / Okta authentication for secure access
+- **Offline-First Design** — Full functionality without network connectivity
 
 ### Backend & Infrastructure
-- FastAPI / Flask REST APIs with PostgreSQL persistence
-- Docker containerization for reproducible deployments
-- Redis-backed task queues with Celery workers
-- Multi-camera RTSP/HTTP streaming with adaptive throttling
+- **Modern API Frameworks** — FastAPI (async) and Flask for different workload types
+- **Database Systems** — PostgreSQL with SQLAlchemy ORM for relational data
+- **Containerization** — Docker and docker-compose for reproducible deployments
+- **Background Processing** — Redis + Celery for distributed task queues
+- **Multi-Camera Streaming** — RTSP/HTTP stream management with 8+ simultaneous cameras
+- **Video Analytics** — Two-pass processing for 2-5x speed improvements
 
 ### Robotics & Automation
-- 6-DOF robotic arm control via serial protocols
-- Linear gantry systems with PLC communication
-- Multi-waypoint motion planning with safety interlocks
-- Custom annotation and training pipelines for object detection
+- **6-DOF Robotic Arms** — Serial protocol control with inverse kinematics
+- **Linear Gantry Systems** — PLC communication for precise positioning
+- **Multi-Waypoint Planning** — Collision avoidance and safety interlocks
+- **Computer Vision Integration** — Real-time feedback loops for adaptive behavior
+- **Custom Training Pipelines** — End-to-end annotation, training, and deployment workflows
 
 ---
 
@@ -214,14 +223,48 @@ A professional iOS application for electrical contractors featuring 30 FPS on-de
 
 ## My Role & Contributions
 
-As the **sole developer** on these projects, I am responsible for:
+As the **principal engineer and sole developer** across these systems, I own the complete software lifecycle:
 
-- **Architecture & Design** — System design, technology selection, data modeling
-- **Implementation** — Full-stack development across Python, Swift, embedded systems
-- **ML/AI Pipeline** — Data collection, annotation, model training, deployment
-- **Hardware Integration** — Robotics, PLCs, cameras, AI accelerators
-- **DevOps** — Docker, CI/CD, deployment automation
-- **Documentation** — Technical docs, user guides, training materials
+### Architecture & System Design
+- Technology stack selection and architectural pattern decisions
+- Hybrid edge/cloud architectures for optimal performance
+- Database schema design and data modeling
+- API design with REST, WebSocket, and async patterns
+- Scalability planning for multi-device deployments
+
+### Full-Stack Implementation
+- **Backend:** Python (FastAPI, Flask), async/await patterns, ORM design
+- **Frontend:** Web interfaces (HTML/CSS/JS), real-time dashboards
+- **Mobile:** Swift + SwiftUI, ARKit, CoreML on-device inference
+- **Embedded:** Raspberry Pi, Arduino, PLC integration
+
+### ML/AI Engineering
+- Computer vision pipeline development with YOLO (v8, v11)
+- Custom dataset creation, annotation, and augmentation
+- Model training, optimization, and hyperparameter tuning
+- Model conversion for edge deployment (CoreML, Hailo HEF)
+- Performance optimization and inference benchmarking
+
+### Hardware & Systems Integration
+- 6-DOF robotic arm control and motion planning
+- PLC communication protocols and industrial automation
+- Multi-camera IP camera systems and RTSP streaming
+- AI accelerator integration (Hailo-8, Apple Neural Engine)
+- Sensor fusion and real-time feedback systems
+
+### DevOps & Deployment
+- Docker containerization and docker-compose orchestration
+- Deployment automation scripts and batch files
+- Environment configuration and secrets management
+- Logging, monitoring, and error tracking systems
+- Database migrations and backup strategies
+
+### Documentation & Knowledge Transfer
+- Technical architecture documentation with diagrams
+- API reference documentation and integration guides
+- User manuals and training materials
+- Troubleshooting guides and FAQ resources
+- Code documentation and inline comments
 
 ---
 
