@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="../../Asthetics/Watcher.png" alt="ORION Banner" width="100%"/>
+<img src="./Asthetics/Watcher.png" alt="ORION Banner" width="100%"/>
 
 # ORION
 

@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="../../Asthetics/Panel_scanner_IOS.png" alt="Panel Scanner iOS Banner" width="300"/>
+<img src="./Asthetics/Panel_scanner_IOS.png" alt="Panel Scanner iOS Banner" width="300"/>
 
 # Panel Scanner iOS
 
