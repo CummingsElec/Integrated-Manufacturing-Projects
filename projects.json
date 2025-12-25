@@ -12,7 +12,7 @@
       "full_name": "Cummings Electrical Robotic Breaker & Equipment Recognition Unified System",
       "tagline": "Automated robotic electrical panel documentation",
       "description": "An automated system combining robotic arm control, linear gantry positioning, and AI-powered vision to document electrical panels. Uses YOLO object detection and OCR to identify breaker part numbers and phases.",
-      "status": "active_development",
+      "status": "in_development",
       "tech_stack": [
         "Python 3.10+",
         "YOLOv8",
@@ -41,8 +41,8 @@
       "name": "Cummings CV",
       "full_name": "Cummings Computer Vision System",
       "tagline": "Enterprise video analytics for industrial safety",
-      "description": "A production-grade video analytics platform for industrial monitoring, safety compliance, and visual data capture. Integrates with multi-channel NVR systems supporting 8 simultaneous camera feeds with real-time AI inference.",
-      "status": "production",
+      "description": "A video analytics platform for industrial monitoring, safety compliance, and visual data capture. Integrates with multi-channel NVR systems supporting 8 simultaneous camera feeds with real-time AI inference.",
+      "status": "in_development",
       "tech_stack": [
         "Python 3.10+",
         "Flask",
@@ -70,8 +70,8 @@
       "name": "ORION",
       "full_name": "Operational Recognition Intelligence and Observation Network",
       "tagline": "Advanced multi-camera AI vision platform for safety and analytics",
-      "description": "Production-grade AI vision system combining live stream monitoring and batch video processing. Features YOLOv11-Large models, ByteTrack persistent tracking, and two-pass processing for 2-5x speed improvements. Planned hybrid edge/cloud architecture with Hailo AI accelerator.",
-      "status": "production",
+      "description": "AI vision system combining live stream monitoring and batch video processing. Features YOLOv11-Large models, ByteTrack persistent tracking, and two-pass processing for 2-5x speed improvements. Planned hybrid edge/cloud architecture with Hailo AI accelerator.",
+      "status": "in_development",
       "version": "1.2",
       "tech_stack": [
         "Python 3.11",
@@ -116,7 +116,7 @@
       "full_name": "Panel Scanner V3",
       "tagline": "Real-time electrical panel detection on iOS",
       "description": "A professional iOS application for electrical contractors featuring on-device ML inference, AR visualization, and smart OCR for panel identification. Exports synchronized video recordings with structured JSON/CSV data.",
-      "status": "production",
+      "status": "open_source",
       "tech_stack": [
         "Swift 5.9",
         "SwiftUI",

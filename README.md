@@ -24,14 +24,16 @@
 
 ## What Is This Repository?
 
-This is a **public-facing portfolio** showcasing production software systems I've architected, developed, and deployed for industrial automation and computer vision applications. The actual source code resides in private repositories—this repository serves as a curated technical presentation of:
+This is a **public-facing portfolio** showcasing software systems I've architected and developed for industrial automation and computer vision applications. The actual source code resides in private repositories—this repository serves as a curated technical presentation of:
 
 - **System Architecture & Design** — Technology decisions, data flow, and scalability patterns
 - **Technical Implementation** — Full-stack development across Python, Swift, embedded systems
-- **Business Impact** — Measurable outcomes, efficiency gains, and ROI delivered
-- **Production Deployment** — Real-world systems running 24/7 in industrial environments
+- **Business Impact** — Measurable outcomes, efficiency gains, and potential ROI
+- **Development Progress** — Internal systems under active development and testing
 
-**Portfolio Philosophy:** This showcase balances technical depth for engineering reviewers with clear business outcomes for leadership and stakeholders. Each project includes architecture diagrams, technology justifications, and concrete results.
+**Portfolio Philosophy:** This showcase balances technical depth for engineering reviewers with clear business outcomes for leadership and stakeholders. Each project includes architecture diagrams, technology justifications, and development status.
+
+> **Note:** These projects are currently in internal development and training phases. YOLO models used in these projects are subject to [Ultralytics licensing terms](https://github.com/ultralytics/ultralytics/blob/main/LICENSE).
 
 ---
 
@@ -112,7 +114,7 @@ An automated robotic system that captures high-resolution images of electrical p
 **Key Outcomes:**
 - Eliminates manual image documentation and annotation (hours → minutes)
 - Custom YOLO models trained for 15+ breaker classes, trainable for any CV task
-- Edge processing via Raspberry Pi for on-site deployments
+- Edge processing via Raspberry Pi for portable use
 
 📁 [View Project Details →](Projects/CERBERUS/)
 
@@ -121,7 +123,7 @@ An automated robotic system that captures high-resolution images of electrical p
 ### Cummings CV
 **Enterprise Computer Vision for Industrial Safety & Monitoring**
 
-A production-grade video analytics platform integrating with multi-channel NVR systems for real-time AI inference. Supports person detection, instance segmentation, pose estimation, and persistent object tracking across 8 simultaneous camera feeds.
+A video analytics platform integrating with multi-channel NVR systems for real-time AI inference. Supports person detection, instance segmentation, pose estimation, and persistent object tracking across 8 simultaneous camera feeds.
 
 **Key Outcomes:**
 - 8-channel live monitoring with privacy-preserving anonymization
@@ -135,7 +137,7 @@ A production-grade video analytics platform integrating with multi-channel NVR s
 ### ORION
 **Operational Recognition Intelligence and Observation Network**
 
-A production-grade AI vision platform delivering live stream monitoring and intelligent batch video processing. Features YOLOv11-Large models with instance segmentation, ByteTrack multi-object tracking, and innovative two-pass processing for 2-5x speed improvements. Planned expansion includes edge computing with Hailo AI accelerators and cross-camera tracking.
+An AI vision platform delivering live stream monitoring and intelligent batch video processing. Features YOLOv11-Large models with instance segmentation, ByteTrack multi-object tracking, and innovative two-pass processing for 2-5x speed improvements. Planned expansion includes edge computing with Hailo AI accelerators and cross-camera tracking.
 
 **Key Outcomes:**
 - Dual operating modes: Real-time monitoring + batch processing
@@ -189,7 +191,7 @@ A professional iOS application for electrical contractors featuring 30 FPS on-de
 ### Backend & Infrastructure
 - **Modern API Frameworks** — FastAPI (async) and Flask for different workload types
 - **Database Systems** — PostgreSQL with SQLAlchemy ORM for relational data
-- **Containerization** — Docker and docker-compose for reproducible deployments
+- **Containerization** — Docker and docker-compose for reproducible environments
 - **Background Processing** — Redis + Celery for distributed task queues
 - **Multi-Camera Streaming** — RTSP/HTTP stream management with 8+ simultaneous cameras
 - **Video Analytics** — Two-pass processing for 2-5x speed improvements
@@ -208,15 +210,12 @@ A professional iOS application for electrical contractors featuring 30 FPS on-de
 ```
 ├── README.md                 ← You are here
 ├── projects.json             ← Structured project manifest
-├── Projects/
-│   ├── CERBERUS/             ← Robotic panel documentation
-│   ├── Cummings_CV/          ← Industrial computer vision
-│   ├── ORION/                ← Multi-camera AI platform
-│   └── Panel_Scanner_IOS/    ← iOS panel scanner app
-├── Meta/
-│   └── how-to-update.md      ← Maintenance instructions
-└── Scripts/
-    └── print_projects.py     ← Project summary utility
+├── LICENSE                   ← MIT + third-party notices
+└── Projects/
+    ├── CERBERUS/             ← Robotic panel documentation
+    ├── Cummings_CV/          ← Industrial computer vision
+    ├── ORION/                ← Multi-camera AI platform
+    └── Panel_Scanner_IOS/    ← iOS panel scanner app (open source)
 ```
 
 ---

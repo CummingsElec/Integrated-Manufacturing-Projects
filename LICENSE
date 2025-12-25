@@ -20,3 +20,37 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+---
+
+## Third-Party Licenses Notice
+
+This repository describes projects that utilize third-party libraries and models
+with their own licensing requirements:
+
+### Ultralytics YOLO (YOLOv8, YOLOv11)
+
+The YOLO models referenced in these projects are developed by Ultralytics and
+are licensed under the **GNU Affero General Public License v3.0 (AGPL-3.0)**.
+
+- Repository: https://github.com/ultralytics/ultralytics
+- License: https://github.com/ultralytics/ultralytics/blob/main/LICENSE
+
+**Important:** Commercial use of Ultralytics YOLO models requires either:
+1. Compliance with AGPL-3.0 terms (including source code disclosure), OR
+2. A commercial license from Ultralytics (https://ultralytics.com/license)
+
+### Other Dependencies
+
+Projects described in this repository may also use:
+- **PyTorch** - BSD-style license
+- **OpenCV** - Apache 2.0 license
+- **CoreML** - Apple proprietary (for iOS development)
+- **ByteTrack** - MIT license
+
+Please refer to each library's official repository for complete licensing terms.
+
+---
+
+This LICENSE file applies only to the documentation and portfolio content in
+this repository. The actual source code for the projects described herein
+resides in separate private repositories with their own licensing terms.
