@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="../../Asthetics/Cerberus.png" alt="CERBERUS Banner" width="100%"/>
+<img src="./Cerberus.png" alt="CERBERUS Banner" width="100%"/>
 
 # CERBERUS
 
