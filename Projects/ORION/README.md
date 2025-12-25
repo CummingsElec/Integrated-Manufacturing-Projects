@@ -386,7 +386,7 @@ ORION/
 
 ## Recent Updates
 
-### v1.2 - December 11, 2024
+### v1.2 - December 11, 2025
 - **Two-Pass Processing:** 2-5x faster video processing workflow  
 - **Comprehensive Logging:** Automatic detailed logs for every job  
 - **Logs Folder:** Organized logs in `logs/video_processor/`  
@@ -394,7 +394,7 @@ ORION/
 - **Log Viewer:** View/download logs from web interface  
 - **JSON + Render Mode:** Separate inference from rendering  
 
-### v1.1 - December 11, 2024
+### v1.1 - December 11, 2025
 - Upgraded to YOLOv11-Large models for best accuracy  
 - Models organized in dedicated `models/` folder  
 - Segmentation mask visualization for people  
