@@ -142,19 +142,6 @@ cerberus/
 - 🔄 Edge deployment optimization in progress
 - 📋 Production packaging planned
 
----
-
-## My Contributions
-
-As the sole developer on CERBERUS, I designed and implemented:
-
-- **System architecture** — Hardware selection, software stack, integration strategy
-- **ML pipeline** — Custom annotation tools, training workflows, model optimization
-- **Robot control** — Motion planning, safety systems, serial communication protocols
-- **Edge software** — Raspberry Pi deployment, cloud sync, offline operation
-- **AI integration** — Multi-provider abstraction with fallback logic
-
----
 
 ## Business Value
 

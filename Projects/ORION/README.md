@@ -403,20 +403,6 @@ ORION/
 - Unified model usage across all pipelines  
 - Improved video processor web interface  
 
----
-
-## My Contributions
-
-As the sole developer, I am responsible for:
-
-- **System Design** — Architecture decisions, technology selection, data flow design
-- **Full-Stack Development** — Backend services, web interfaces, video processing pipeline
-- **AI/ML Integration** — YOLO model selection, ByteTrack integration, optimization
-- **Computer Vision** — OpenCV pipeline, segmentation visualization, tracking logic
-- **DevOps** — Deployment automation, Docker containerization, logging systems
-- **Documentation** — Technical docs, user guides, API reference, troubleshooting
-
----
 
 ## Business Value
 
@@ -449,29 +435,6 @@ As the sole developer, I am responsible for:
 - [ ] TV dashboard for operations center - Planned  
 - [ ] API integration for third-party tools - Planned  
 
----
-
-## Future Roadmap
-
-### Phase 1: Edge Intelligence (Q1 2025)
-- Raspberry Pi 5 + Hailo-8 deployment
-- 4-camera edge inference at 15+ FPS
-- TV dashboard with 8-camera grid layout
-- HDMI output for operations monitoring
-
-### Phase 2: Advanced Analytics (Q2 2025)
-- Cross-camera persistent tracking
-- Zone-based metrics and heat maps
-- Near-miss detection and alerting
-- PostgreSQL backend with FastAPI
-
-### Phase 3: Enterprise Features (Q3 2025)
-- Azure cloud deployment
-- Entra ID authentication
-- Advanced re-identification algorithms
-- Custom detection classes (PPE, equipment)
-
----
 
 <div align="center">
 
@@ -481,6 +444,5 @@ As the sole developer, I am responsible for:
 
 ---
 
-**v1.2 Production Release** • December 11, 2024
 
 </div>

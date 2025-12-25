@@ -157,19 +157,7 @@ GET  /api/status          → System status
 - 🔄 Direct camera RTSP bypass planned
 - 📋 Custom detection models (forklift, PPE) in roadmap
 
----
 
-## My Contributions
-
-As the sole developer, I designed and implemented:
-
-- **System architecture** — Multi-camera integration, streaming protocols, adaptive throttling
-- **AI pipeline** — Model selection, inference optimization, tracking configuration
-- **Privacy features** — Anonymization mode, local-only processing design
-- **Web interface** — Flask dashboard, REST API, real-time streaming
-- **DevOps** — Windows batch installers, dependency management
-
----
 
 ## Business Value
 

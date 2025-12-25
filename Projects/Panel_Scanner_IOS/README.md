@@ -179,20 +179,6 @@ PanelScanner/
 - 🔄 iPad optimization planned
 - 📋 Multi-language OCR in roadmap
 
----
-
-## My Contributions
-
-As the sole developer, I designed and implemented:
-
-- **iOS architecture** — SwiftUI/Combine patterns, service layer design
-- **ML integration** — CoreML model conversion, Neural Engine optimization
-- **AR features** — ARKit setup, 3D label rendering, spatial anchoring
-- **Detection logic** — Tracking algorithms, deduplication, dwell validation
-- **Export system** — Multi-format output, video sync, cloud upload
-- **UX design** — Tab navigation, settings UI, onboarding flow
-
----
 
 ## Business Value
 
