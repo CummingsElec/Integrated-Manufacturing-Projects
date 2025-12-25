@@ -44,7 +44,7 @@ This is a **public-facing portfolio** showcasing software systems I've architect
 <td width="50%" align="center">
 
 <a href="Projects/CERBERUS/">
-<img src="assets/Cerberus.png" alt="CERBERUS" width="100%"/>
+<img src="Projects/Cerberus.png" alt="CERBERUS" width="100%"/>
 </a>
 
 **[CERBERUS](Projects/CERBERUS/)**<br/>
@@ -58,7 +58,7 @@ This is a **public-facing portfolio** showcasing software systems I've architect
 <td width="50%" align="center">
 
 <a href="Projects/Cummings_CV/">
-<img src="assets/Thundercats_Cummings_CV.jpg" alt="Cummings CV" width="100%"/>
+<img src="Projects/Thundercats_Cummings_CV.jpg" alt="Cummings CV" width="100%"/>
 </a>
 
 **[Cummings CV](Projects/Cummings_CV/)**<br/>
@@ -74,7 +74,7 @@ This is a **public-facing portfolio** showcasing software systems I've architect
 <td width="50%" align="center">
 
 <a href="Projects/ORION/">
-<img src="assets/Watcher.png" alt="ORION" width="100%"/>
+<img src="Projects/Watcher.png" alt="ORION" width="100%"/>
 </a>
 
 **[ORION](Projects/ORION/)**<br/>
@@ -88,7 +88,7 @@ This is a **public-facing portfolio** showcasing software systems I've architect
 <td width="50%" align="center">
 
 <a href="Projects/Panel_Scanner_IOS/">
-<img src="assets/Panel_scanner_IOS.png" alt="Panel Scanner iOS" width="200"/>
+<img src="Projects/Panel_scanner_IOS.png" alt="Panel Scanner iOS" width="200"/>
 </a>
 
 **[Panel Scanner iOS](Projects/Panel_Scanner_IOS/)**<br/>
@@ -209,13 +209,13 @@ A professional iOS application for electrical contractors featuring 30 FPS on-de
 
 ```
 ├── README.md                 ← You are here
-├── projects.json             ← Structured project manifest
 ├── LICENSE                   ← MIT + third-party notices
 └── Projects/
     ├── CERBERUS/             ← Robotic panel documentation
     ├── Cummings_CV/          ← Industrial computer vision
     ├── ORION/                ← Multi-camera AI platform
-    └── Panel_Scanner_IOS/    ← iOS panel scanner app (open source)
+    ├── Panel_Scanner_IOS/    ← iOS panel scanner app (open source)
+    └── *.png / *.jpg         ← Project images
 ```
 
 ---
