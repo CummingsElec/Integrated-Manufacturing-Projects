@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./Asthetics/Thundercats_Cummings_CV.jpg" alt="Cummings CV Banner" width="100%"/>
+<img src="./Thundercats_Cummings_CV.jpg" alt="Cummings CV Banner" width="100%"/>
 
 # Cummings CV
 
