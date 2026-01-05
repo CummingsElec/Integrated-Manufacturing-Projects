@@ -10,7 +10,7 @@
 
 [![Status](https://img.shields.io/badge/Status-Production-success?style=flat-square)](#)
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white)](#)
-[![YOLO](https://img.shields.io/badge/YOLO-v11--Large-00FFFF?style=flat-square)](#)
+[![RF-DETR](https://img.shields.io/badge/RF--DETR-Large-00FFFF?style=flat-square)](#)
 [![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)](#)
 
 </div>
@@ -36,12 +36,12 @@ Industrial facilities need continuous monitoring for safety compliance, personne
          │                │                │                │
          ▼                ▼                ▼                ▼
 ┌─────────────────┐ ┌───────────────┐ ┌───────────────┐ ┌────────────────┐
-│  DVR/NVR Layer  │ │ YOLO Inference│ │ ByteTrack     │ │ LM Studio      │
+│  DVR/NVR Layer  │ │ AI Inference  │ │ ByteTrack     │ │ LM Studio      │
 │  Multi-Channel  │ │ GPU/CPU       │ │ MOT Engine    │ │ Vision LLM     │
 │  8 Cameras      │ │ CUDA/CPU      │ │ ID Persistence│ │ Text Analysis  │
 ├─────────────────┤ ├───────────────┤ ├───────────────┤ ├────────────────┤
-│ • HTTPS/RTSP    │ │ • yolo11l-seg │ │ • track_buffer│ │ • Local only   │
-│ • 12MP streams  │ │ • yolo11l-pose│ │ • IoU matching│ │ • OCR capable  │
+│ • HTTPS/RTSP    │ │ • RF-DETR     │ │ • track_buffer│ │ • Local only   │
+│ • 12MP streams  │ │ • SAM3-seg    │ │ • IoU matching│ │ • OCR capable  │
 │ • Adaptive FPS  │ │ • 640px input │ │ • 120 frames  │ │ • No cloud     │
 └─────────────────┘ └───────────────┘ └───────────────┘ └────────────────┘
                                     │
@@ -59,9 +59,9 @@ Industrial facilities need continuous monitoring for safety compliance, personne
 | Component | Technology | Purpose |
 |-----------|------------|---------|
 | **Web Framework** | Flask | REST API and web dashboard |
-| **Object Detection** | YOLOv11-Large | Person/vehicle detection |
-| **Segmentation** | YOLOv11-Seg | Pixel-accurate instance masks |
-| **Pose Estimation** | YOLOv11-Pose | 17-keypoint skeleton tracking |
+| **Object Detection** | RF-DETR-Large | Person/vehicle detection |
+| **Segmentation** | SAM3 | Pixel-accurate instance masks |
+| **Pose Estimation** | Open-source Pose Models | 17-keypoint skeleton tracking |
 | **Tracking** | ByteTrack | Multi-object tracking with persistent IDs |
 | **Video Processing** | OpenCV | Frame capture and manipulation |
 | **Camera Integration** | HTTPS/RTSP | Multi-protocol DVR communication |
@@ -77,7 +77,7 @@ Industrial facilities need continuous monitoring for safety compliance, personne
 - **DVR throttling** to prevent overload during high-frequency requests
 
 ### 🎯 AI Detection Capabilities
-- **Person detection** with YOLOv11-Large (27.6M parameters)
+- **Person detection** with RF-DETR-Large transformer architecture
 - **Instance segmentation** for pixel-accurate person boundaries
 - **Pose estimation** with 17-keypoint skeleton overlay
 - **Configurable detection classes** and confidence thresholds
@@ -98,23 +98,23 @@ Industrial facilities need continuous monitoring for safety compliance, personne
 
 ## Detection Models
 
-### YOLOv11-Large Specifications
+### RF-DETR-Large Specifications
 
 | Metric | Value |
 |--------|-------|
-| **Parameters** | 27,678,368 |
-| **GFLOPs** | 132.9 |
+| **Architecture** | Transformer-based DETR |
 | **Input Resolution** | 640×640 |
-| **mAP@0.5** | 0.53 |
+| **mAP@0.5** | 0.54 |
 | **Supported Classes** | 80 (COCO) |
+| **License** | Apache 2.0 |
 
 ### Available Detection Modes
 
 | Mode | Model | Output |
 |------|-------|--------|
-| **Detection** | yolo11l | Bounding boxes |
-| **Segmentation** | yolo11l-seg | Pixel masks |
-| **Pose** | yolo11l-pose | Skeleton keypoints |
+| **Detection** | RF-DETR-Large | Bounding boxes |
+| **Segmentation** | SAM3 | Pixel masks |
+| **Pose** | Open-source Pose | Skeleton keypoints |
 
 ---
 
@@ -150,7 +150,7 @@ GET  /api/status          → System status
 **✅ Production**
 
 - ✅ Multi-camera DVR integration (8 channels)
-- ✅ YOLOv11-Large model support
+- ✅ RF-DETR-Large model support
 - ✅ Instance segmentation with anonymization
 - ✅ ByteTrack optimization for low FPS
 - ✅ Web-based camera selector
@@ -188,4 +188,3 @@ GET  /api/status          → System status
 **Industrial Computer Vision • Real-Time AI • Privacy-Preserving Analytics**
 
 </div>
-

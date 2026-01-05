@@ -39,7 +39,7 @@ Electrical contractors spend significant time manually documenting panel invento
 │                                                                 │
 │  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐         │
 │  │   Camera    │───►│   CoreML    │───►│   Vision    │         │
-│  │   Feed      │    │   YOLO      │    │   OCR       │         │
+│  │   Feed      │    │   RF-DETR   │    │   OCR       │         │
 │  └─────────────┘    └─────────────┘    └─────────────┘         │
 │         │                  │                  │                 │
 │         ▼                  ▼                  ▼                 │
@@ -67,7 +67,7 @@ Electrical contractors spend significant time manually documenting panel invento
 | **Framework** | SwiftUI + Combine | Reactive UI architecture |
 | **Pattern** | MVVM | Clean separation of concerns |
 | **ML Inference** | CoreML + Neural Engine | 30 FPS on-device detection |
-| **Object Detection** | YOLOv8-Large | Panel and breaker localization |
+| **Object Detection** | RF-DETR CoreML | Panel and breaker localization |
 | **OCR** | Vision Framework | Part number extraction |
 | **AR** | ARKit + RealityKit | 3D label visualization |
 | **Auth** | Enterprise SSO | Secure workforce access |
@@ -113,7 +113,7 @@ Electrical contractors spend significant time manually documenting panel invento
 
 ## ML Model Performance
 
-### YOLOv8-Large CoreML
+### RF-DETR CoreML
 
 | Metric | Value |
 |--------|-------|
@@ -171,7 +171,7 @@ PanelScanner/
 
 **✅ Production**
 
-- ✅ On-device YOLOv8 inference at 30 FPS
+- ✅ On-device RF-DETR inference at 30 FPS
 - ✅ All three scanning modes operational
 - ✅ Smart OCR with user confirmation
 - ✅ Video + JSON/CSV synchronized export
@@ -223,4 +223,3 @@ Hidden in the **Play** tab: a fully functional **Circuit Breaker** game!
 *Built with Swift • Powered by CoreML • Made for Electricians*
 
 </div>
-

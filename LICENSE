@@ -27,17 +27,17 @@ SOFTWARE.
 This repository describes projects that utilize third-party libraries and models
 with their own licensing requirements:
 
-### Ultralytics YOLO (YOLOv8, YOLOv11)
+### RF-DETR (Roboflow Detection Transformer)
 
-The YOLO models referenced in these projects are developed by Ultralytics and
-are licensed under the **GNU Affero General Public License v3.0 (AGPL-3.0)**.
+RF-DETR is an open-source object detection model licensed under Apache 2.0.
+- Repository: https://github.com/roboflow/RF-DETR
+- License: Apache 2.0
 
-- Repository: https://github.com/ultralytics/ultralytics
-- License: https://github.com/ultralytics/ultralytics/blob/main/LICENSE
+### SAM3 (Segment Anything Model)
 
-**Important:** Commercial use of Ultralytics YOLO models requires either:
-1. Compliance with AGPL-3.0 terms (including source code disclosure), OR
-2. A commercial license from Ultralytics (https://ultralytics.com/license)
+SAM is developed by Meta AI and released under the Apache 2.0 license.
+- Repository: https://github.com/facebookresearch/segment-anything
+- License: Apache 2.0
 
 ### Other Dependencies
 

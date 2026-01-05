@@ -11,7 +11,7 @@
 [![Status](https://img.shields.io/badge/Status-Production_v1.2-success?style=flat-square)](#)
 [![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=flat-square&logo=python&logoColor=white)](#)
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)](#)
-[![YOLOv11](https://img.shields.io/badge/YOLOv11-Large-00FFFF?style=flat-square)](#)
+[![RF-DETR](https://img.shields.io/badge/RF--DETR-Large-00FFFF?style=flat-square)](#)
 
 </div>
 
@@ -28,13 +28,13 @@ ORION is a production-grade AI vision system that transforms industrial monitori
 - **Video Processing:** Batch process pre-recorded DVR footage with AI analysis and comprehensive reports
 
 **Two-Pass Processing**
-- Separate YOLO inference from video rendering for 2-5x faster processing
+- Separate model inference from video rendering for 2-5x faster processing
 - Process once, render multiple times with different visualizations
 - Ideal for iterative review and analysis workflows
 
 **Advanced AI Models**
-- YOLOv11-Large with 51M parameters for detection
-- YOLOv11-Large-Seg with 56M parameters for instance segmentation
+- RF-DETR-Large with transformer-based detection architecture
+- SAM3 (Segment Anything Model 3) for instance segmentation
 - ByteTrack integration for persistent cross-frame tracking
 - CPU and GPU acceleration support
 
@@ -72,9 +72,9 @@ Industrial facilities require intelligent monitoring that goes beyond passive vi
 │  ├────────────────────────────────────────────────────────────┤     │
 │  │  • Flask Vision Server (Live Monitoring)                   │     │
 │  │  • Video Processor GUI (Batch Processing)                  │     │
-│  │  • YOLOv11L & YOLOv11L-seg Models                         │     │
+│  │  • RF-DETR & SAM3 Models                                   │     │
 │  │  • ByteTrack Multi-Object Tracking                        │     │
-│  │  • OpenCV + PyTorch + Ultralytics                         │     │
+│  │  • OpenCV + PyTorch                                        │     │
 │  │  • HTML Report Generation                                  │     │
 │  │  • Comprehensive Logging System                            │     │
 │  └────────────────────────────────────────────────────────────┘     │
@@ -101,7 +101,7 @@ Industrial facilities require intelligent monitoring that goes beyond passive vi
 │                              │                                      │
 │  ┌────────────────────┐      │      ┌────────────────────┐         │
 │  │   Hailo-8 (26T)    │      │      │   FastAPI Server   │         │
-│  │   Real-time YOLO   │◄────────────►   REST + WebSocket  │         │
+│  │   Real-time AI     │◄────────────►   REST + WebSocket  │         │
 │  └────────────────────┘      │      └────────────────────┘         │
 │           │                  │               │                      │
 │  ┌────────────────────┐      │      ┌────────────────────┐         │
@@ -133,7 +133,7 @@ Industrial facilities require intelligent monitoring that goes beyond passive vi
 ### Video Processing Pipeline
 
 **Fast Two-Pass Workflow:**
-1. **Pass 1 - Inference:** Process video with YOLO, save detections to JSON (fast)
+1. **Pass 1 - Inference:** Process video with RF-DETR/SAM3, save detections to JSON (fast)
 2. **Pass 2 - Rendering:** Apply overlays from JSON to video (even faster)
 3. **Result:** 2-5x faster than single-pass, enables multiple visualizations
 
@@ -146,9 +146,9 @@ Industrial facilities require intelligent monitoring that goes beyond passive vi
 ### Advanced AI Detection
 
 **Models:**
-- YOLOv11-Large (51MB) - Superior detection accuracy
-- YOLOv11-Large-seg (56MB) - Instance segmentation with masks
-- 27.6M+ parameters for high-accuracy inference
+- RF-DETR-Large - Transformer-based detection with superior accuracy
+- SAM3 (Segment Anything Model 3) - Instance segmentation with masks
+- Fully open source with Apache 2.0 licensing
 
 **Capabilities:**
 - Person detection with pose-adaptive masks
@@ -199,9 +199,9 @@ Industrial facilities require intelligent monitoring that goes beyond passive vi
 |-------|------------|---------|
 | **Framework** | Flask | Web server for live monitoring |
 | **Processing** | OpenCV | Video capture and manipulation |
-| **AI Framework** | PyTorch + Ultralytics | Deep learning inference |
-| **Detection** | YOLOv11-Large | Object detection |
-| **Segmentation** | YOLOv11-Large-seg | Instance segmentation |
+| **AI Framework** | PyTorch | Deep learning inference |
+| **Detection** | RF-DETR-Large | Object detection |
+| **Segmentation** | SAM3 | Instance segmentation |
 | **Tracking** | ByteTrack | Multi-object tracking |
 | **Language** | Python 3.11 | Primary development language |
 | **GUI** | Tkinter | Video processor interface |
@@ -248,8 +248,8 @@ INSTALL_ORION.bat
 
 # Installation will:
 # - Create Python virtual environment
-# - Install OpenCV, PyTorch, Ultralytics
-# - Download YOLOv11L models (~100MB)
+# - Install OpenCV, PyTorch
+# - Download RF-DETR and SAM3 models (~100MB)
 ```
 
 ### Usage
@@ -332,8 +332,8 @@ ORION/
 │
 ├── models/
 │   ├── download_models.py      # Model download script
-│   ├── yolo11l.pt              # Detection model (51MB)
-│   └── yolo11l-seg.pt          # Segmentation model (56MB)
+│   ├── rf_detr_large.pt        # Detection model
+│   └── sam3.pt                 # Segmentation model
 │
 ├── recordings/
 │   ├── input/                  # Place DVR videos here
@@ -369,7 +369,7 @@ ORION/
 | **Two-Pass Speedup** | 2-5x faster | vs traditional single-pass |
 | **Detection Accuracy** | 99%+ | Person/vehicle classes |
 | **Tracking Consistency** | 95%+ | Single camera persistent IDs |
-| **Memory Usage** | 4-8GB | With YOLOv11-Large models |
+| **Memory Usage** | 4-8GB | With RF-DETR/SAM3 models |
 
 ### Target Performance (Future)
 
@@ -395,7 +395,7 @@ ORION/
 - **JSON + Render Mode:** Separate inference from rendering  
 
 ### v1.1 - December 11, 2025
-- Upgraded to YOLOv11-Large models for best accuracy  
+- Upgraded to RF-DETR-Large and SAM3 models for best accuracy  
 - Models organized in dedicated `models/` folder  
 - Segmentation mask visualization for people  
 - HTML report generation with detection timelines  

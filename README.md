@@ -13,7 +13,7 @@
 
 <br/>
 
-![Computer Vision](https://img.shields.io/badge/Computer_Vision-YOLO_v8_|_v11-00FFFF?style=flat-square)
+![Computer Vision](https://img.shields.io/badge/Computer_Vision-RF--DETR_|_SAM3-00FFFF?style=flat-square)
 ![Edge AI](https://img.shields.io/badge/Edge_AI-Hailo_|_CoreML-FF6F00?style=flat-square)
 ![Robotics](https://img.shields.io/badge/Robotics-6--DOF_Arm-9C27B0?style=flat-square)
 ![iOS](https://img.shields.io/badge/iOS-ARKit_|_SwiftUI-007AFF?style=flat-square)
@@ -33,8 +33,6 @@ This is a **public-facing portfolio** showcasing software systems I've architect
 
 **Portfolio Philosophy:** This showcase balances technical depth for engineering reviewers with clear business outcomes for leadership and stakeholders. Each project includes architecture diagrams, technology justifications, and development status.
 
-> **Note:** These projects are currently in internal development and training phases. YOLO models used in these projects are subject to [Ultralytics licensing terms](https://github.com/ultralytics/ultralytics/blob/main/LICENSE).
-
 ---
 
 ## Project Showcase
@@ -51,7 +49,7 @@ This is a **public-facing portfolio** showcasing software systems I've architect
 *Robotic Panel Documentation*
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![YOLO](https://img.shields.io/badge/YOLO-00FFFF?style=flat-square)
+![RF-DETR](https://img.shields.io/badge/RF--DETR-00FFFF?style=flat-square)
 ![Robotics](https://img.shields.io/badge/Robotics-9C27B0?style=flat-square)
 
 </td>
@@ -65,7 +63,7 @@ This is a **public-facing portfolio** showcasing software systems I've architect
 *Industrial Video Analytics*
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![YOLO](https://img.shields.io/badge/YOLOv11-00FFFF?style=flat-square)
+![SAM3](https://img.shields.io/badge/SAM3-00FFFF?style=flat-square)
 ![Flask](https://img.shields.io/badge/Flask-000?style=flat-square&logo=flask)
 
 </td>
@@ -109,11 +107,11 @@ This is a **public-facing portfolio** showcasing software systems I've architect
 ### CERBERUS
 **Cummings Electrical Robotic Breaker & Equipment Recognition Unified System**
 
-An automated robotic system that captures high-resolution images of electrical panels using a 6-DOF robotic arm and linear gantry, then applies YOLO object detection and OCR to identify breaker part numbers and phases. Features a multi-model AI pipeline with local LLM inference and cloud fallback. Computer vision model training pipelines help expedite inference systems to match exact needs for vision processing.
+An automated robotic system that captures high-resolution images of electrical panels using a 6-DOF robotic arm and linear gantry, then applies RF-DETR object detection and OCR to identify breaker part numbers and phases. Features a multi-model AI pipeline with local LLM inference and cloud fallback. Computer vision model training pipelines help expedite inference systems to match exact needs for vision processing.
 
 **Key Outcomes:**
 - Eliminates manual image documentation and annotation (hours → minutes)
-- Custom YOLO models trained for 15+ breaker classes, trainable for any CV task
+- Custom RF-DETR models trained for 15+ breaker classes, trainable for any CV task
 - Edge processing via Raspberry Pi for portable use
 
 📁 [View Project Details →](Projects/CERBERUS/)
@@ -127,7 +125,7 @@ A video analytics platform integrating with multi-channel NVR systems for real-t
 
 **Key Outcomes:**
 - 8-channel live monitoring with privacy-preserving anonymization
-- YOLOv11-Large with 27.6M parameters for high-accuracy detection
+- RF-DETR-Large with transformer architecture for high-accuracy detection
 - Web-based dashboard with real-time streaming and analysis queuing
 
 📁 [View Project Details →](Projects/Cummings_CV/)
@@ -137,12 +135,12 @@ A video analytics platform integrating with multi-channel NVR systems for real-t
 ### ORION
 **Operational Recognition Intelligence and Observation Network**
 
-An AI vision platform delivering live stream monitoring and intelligent batch video processing. Features YOLOv11-Large models with instance segmentation, ByteTrack multi-object tracking, and innovative two-pass processing for 2-5x speed improvements. Planned expansion includes edge computing with Hailo AI accelerators and cross-camera tracking.
+An AI vision platform delivering live stream monitoring and intelligent batch video processing. Features RF-DETR-Large models with SAM3 instance segmentation, ByteTrack multi-object tracking, and innovative two-pass processing for 2-5x speed improvements. Planned expansion includes edge computing with Hailo AI accelerators and cross-camera tracking.
 
 **Key Outcomes:**
 - Dual operating modes: Real-time monitoring + batch processing
 - Two-pass workflow: Separate inference from rendering for massive speedup
-- YOLOv11-Large (51M params) with colored segmentation masks
+- RF-DETR-Large with SAM3 for colored segmentation masks
 - HTML detection reports with comprehensive timelines and metrics
 - 8-camera DVR integration via RTSP/HTTPS streams
 - **Planned:** Hybrid edge/cloud with Raspberry Pi + Hailo-8 (26 TOPS)
@@ -157,7 +155,7 @@ An AI vision platform delivering live stream monitoring and intelligent batch vi
 A professional iOS application for electrical contractors featuring 30 FPS on-device ML inference, AR visualization mode, and smart OCR for panel identification. Exports synchronized video recordings with structured JSON/CSV data.
 
 **Key Outcomes:**
-- YOLOv8-Large CoreML model running entirely on-device
+- RF-DETR CoreML model running entirely on-device
 - AR mode with floating 3D labels for hands-free inspection
 - Complete panel inventory captured in minutes, not hours
 
@@ -168,7 +166,7 @@ A professional iOS application for electrical contractors featuring 30 FPS on-de
 ## Technical Highlights
 
 ### Computer Vision & Machine Learning
-- **Custom YOLO Models** — YOLOv8 and YOLOv11-Large (up to 51M parameters) trained for domain-specific detection
+- **Open Source CV Models** — RF-DETR and SAM3 with Apache 2.0 licensing for unrestricted commercial use
 - **Instance Segmentation** — Pixel-accurate masks for privacy-preserving person detection and tracking
 - **Multi-Object Tracking** — ByteTrack integration for persistent ID assignment across frames
 - **On-Device Inference** — CoreML (iOS Neural Engine) and Hailo AI accelerator (26 TOPS) optimization
@@ -237,7 +235,7 @@ As the **principal engineer and sole developer** across these systems, I maintai
 - **Embedded:** Raspberry Pi, Arduino, PLC integration
 
 ### ML/AI Engineering
-- Computer vision pipeline development with YOLO (v8, v11)
+- Computer vision pipeline development with RF-DETR and SAM3
 - Custom dataset creation, annotation, and augmentation
 - Model training, optimization, and hyperparameter tuning
 - Model conversion for edge deployment (CoreML, Hailo HEF)
@@ -285,4 +283,3 @@ For questions about these projects or collaboration opportunities:
 
 
 </div>
-

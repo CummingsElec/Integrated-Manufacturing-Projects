@@ -10,7 +10,7 @@
 
 [![Status](https://img.shields.io/badge/Status-Active_Development-blue?style=flat-square)](#)
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white)](#)
-[![YOLO](https://img.shields.io/badge/YOLO-v8-00FFFF?style=flat-square)](#)
+[![RF-DETR](https://img.shields.io/badge/RF--DETR-Apache_2.0-00FFFF?style=flat-square)](#)
 [![Robotics](https://img.shields.io/badge/Robotics-6--DOF-9C27B0?style=flat-square)](#)
 
 </div>
@@ -41,7 +41,7 @@ Documenting electrical panels during service calls or new installations is time-
 │                             ▼                                   │
 │                    ┌──────────────┐                             │
 │                    │  Vision AI   │                             │
-│                    │ (YOLO + OCR) │                             │
+│                    │ (RF-DETR+OCR)│                             │
 │                    └──────────────┘                             │
 │                             │                                   │
 │          ┌──────────────────┼──────────────────┐               │
@@ -56,7 +56,7 @@ Documenting electrical panels during service calls or new installations is time-
 
 The system operates in three stages:
 1. **Capture** — Robotic arm positions camera across panel surface via linear gantry
-2. **Detect** — YOLO models identify panels, breakers, and text regions
+2. **Detect** — RF-DETR and SAM3 models identify panels, breakers, and text regions
 3. **Recognize** — OCR extracts part numbers, validated by multi-model AI pipeline
 
 ---
@@ -65,8 +65,9 @@ The system operates in three stages:
 
 | Component | Technology | Purpose |
 |-----------|------------|---------|
-| **ML Framework** | PyTorch + Ultralytics | YOLO model training and inference |
-| **Object Detection** | YOLOv8 (custom trained) | Panel and breaker localization |
+| **ML Framework** | PyTorch | Model training and inference |
+| **Object Detection** | RF-DETR (custom trained) | Panel and breaker localization |
+| **Segmentation** | SAM3 | Instance segmentation masks |
 | **OCR** | PaddleOCR | Text extraction from breaker labels |
 | **Robot Control** | LeRobot (HuggingFace) | 6-DOF arm motion planning |
 | **Edge Processing** | Raspberry Pi | On-site capture and preprocessing |
@@ -84,7 +85,8 @@ The system operates in three stages:
 - **Automatic torque management** and emergency stop capability
 
 ### 🎯 Computer Vision Pipeline
-- **Custom YOLO models** trained for 15+ detection classes
+- **Custom RF-DETR models** trained for 15+ detection classes
+- **SAM3 segmentation** for pixel-accurate boundaries
 - **Polygon annotation tool** for training data creation
 - **Local CUDA training** with automatic GPU optimization
 - **Google Colab integration** for cloud-based training
@@ -104,7 +106,7 @@ The system operates in three stages:
 
 ## Detection Classes
 
-The YOLO model is trained to recognize:
+The RF-DETR model is trained to recognize:
 
 | Category | Classes |
 |----------|---------|
@@ -118,7 +120,7 @@ The YOLO model is trained to recognize:
 
 ```
 cerberus/
-├── yolo_training/           # Model training pipeline
+├── model_training/          # Model training pipeline
 │   ├── configs/             # Training configurations
 │   ├── tools/               # Annotation utilities
 │   └── colab/               # Cloud training notebooks
@@ -137,7 +139,7 @@ cerberus/
 **🔄 Active Development**
 
 - ✅ Robotic arm integration complete
-- ✅ Custom YOLO training pipeline operational
+- ✅ Custom RF-DETR training pipeline operational
 - ✅ Multi-model AI inference working
 - 🔄 Edge deployment optimization in progress
 - 📋 Production packaging planned
@@ -157,7 +159,8 @@ cerberus/
 ## Acknowledgments
 
 - [LeRobot](https://github.com/huggingface/lerobot) by HuggingFace — Robot control framework
-- [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics) — Object detection
+- [RF-DETR](https://github.com/roboflow/RF-DETR) — Object detection (Apache 2.0)
+- [SAM3](https://github.com/facebookresearch/segment-anything) — Segment Anything Model
 - [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) — Text recognition
 
 ---
@@ -167,4 +170,3 @@ cerberus/
 **Robotic Automation • Computer Vision • Edge AI**
 
 </div>
-
