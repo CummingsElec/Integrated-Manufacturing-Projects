@@ -6,9 +6,10 @@
 
 <br/>
 
-[![Projects](https://img.shields.io/badge/Projects-4-0A66C2?style=for-the-badge)](Projects/)
+[![Projects](https://img.shields.io/badge/Projects-6-0A66C2?style=for-the-badge)](Projects/)
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![Swift](https://img.shields.io/badge/Swift-5.9-F05138?style=for-the-badge&logo=swift&logoColor=white)](https://swift.org)
+[![Java](https://img.shields.io/badge/Java-17-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://openjdk.org)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
 <br/>
@@ -17,6 +18,7 @@
 ![Edge AI](https://img.shields.io/badge/Edge_AI-Hailo_|_CoreML-FF6F00?style=flat-square)
 ![Robotics](https://img.shields.io/badge/Robotics-6--DOF_Arm-9C27B0?style=flat-square)
 ![iOS](https://img.shields.io/badge/iOS-ARKit_|_SwiftUI-007AFF?style=flat-square)
+![Android](https://img.shields.io/badge/Android-ML_Kit_|_WebSocket-3DDC84?style=flat-square)
 
 </div>
 
@@ -98,6 +100,36 @@ This is a **public-facing portfolio** showcasing software systems I've architect
 
 </td>
 </tr>
+<tr>
+<td width="50%" align="center">
+
+<a href="Projects/EyePhone_App/">
+<img src="https://img.shields.io/badge/👁️_EyePhone-App-3DDC84?style=for-the-badge" alt="EyePhone App"/>
+</a>
+
+**[EyePhone App](Projects/EyePhone_App/)**<br/>
+*Animated Robot Eyes for Android*
+
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![ML Kit](https://img.shields.io/badge/ML_Kit-4285F4?style=flat-square)
+![WebSocket](https://img.shields.io/badge/WebSocket-4353FF?style=flat-square)
+
+</td>
+<td width="50%" align="center">
+
+<a href="Projects/Project_Recorder/">
+<img src="https://img.shields.io/badge/🎥_Project-Recorder-F05138?style=for-the-badge" alt="Project Recorder"/>
+</a>
+
+**[Project Recorder](Projects/Project_Recorder/)**<br/>
+*Job Site Video with OCR Naming*
+
+![Swift](https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=swift&logoColor=white)
+![CoreML](https://img.shields.io/badge/CoreML-00C7B7?style=flat-square)
+![OneDrive](https://img.shields.io/badge/OneDrive-0078D4?style=flat-square)
+
+</td>
+</tr>
 </table>
 
 ---
@@ -163,6 +195,36 @@ A professional iOS application for electrical contractors featuring 30 FPS on-de
 
 ---
 
+### EyePhone App
+**Animated Robot Eyes for Android — Remotely Controllable**
+
+A full-screen expressive eye animation system for Android devices, designed to run on low-power phones as an interactive face for robots, kiosks, or installations. Features ML Kit face tracking that drives gaze following and reactive expressions, IMU-based tilt gaze, 10 mood presets, and a WebSocket remote control interface. Includes kiosk lockdown mode with boot auto-start for unattended deployments.
+
+**Key Outcomes:**
+- Repurposes any Android phone (API 24+) as a robot face display
+- ML Kit face detection drives realistic gaze and expression mirroring
+- WebSocket control enables remote mood, theme, and gaze commands
+- Kiosk mode with passcode lock and boot auto-start for field deployments
+
+📁 [View Project Details →](Projects/EyePhone_App/)
+
+---
+
+### Project Recorder
+**Job Site Video Recorder with Panel Label Detection & OCR**
+
+An iOS app for recording walkthrough videos on job sites with automatic electrical panel label detection and OCR. A YOLO CoreML model detects panel label stickers in real-time, and tap-to-scan OCR reads the label text. Optional AI verification via xAI Grok catches misreads. The scanned label becomes the video filename automatically, and recordings can auto-upload to a configurable OneDrive folder.
+
+**Key Outcomes:**
+- Automatic video file naming from scanned panel labels—no manual entry
+- YOLO on-device detection + Apple Vision OCR + Grok AI verification pipeline
+- OneDrive auto-upload eliminates cable transfer and manual organization
+- Eliminates hours of post-job file renaming and upload admin
+
+📁 [View Project Details →](Projects/Project_Recorder/)
+
+---
+
 ## Technical Highlights
 
 ### Computer Vision & Machine Learning
@@ -185,6 +247,13 @@ A professional iOS application for electrical contractors featuring 30 FPS on-de
 - **Augmented Reality** — ARKit integration with floating 3D labels and spatial tracking
 - **Enterprise SSO** — Microsoft Entra ID / Okta authentication for secure access
 - **Offline-First Design** — Full functionality without network connectivity
+
+### Android Development
+- **WebView + GSAP Animation** — 60fps expressive eye animations with 3D depth effects
+- **ML Kit Face Detection** — On-device face tracking with gaze following and expression mirroring
+- **WebSocket Remote Control** — Network-accessible command interface for mood, gaze, and theme
+- **Kiosk Mode** — Device Owner / Lock Task Mode with passcode protection and boot auto-start
+- **Sensor Integration** — IMU (accelerometer + gyroscope) for tilt-based gaze control
 
 ### Backend & Infrastructure
 - **Modern API Frameworks** — FastAPI (async) and Flask for different workload types
@@ -211,8 +280,10 @@ A professional iOS application for electrical contractors featuring 30 FPS on-de
 └── Projects/
     ├── CERBERUS/             ← Robotic panel documentation
     ├── Cummings_CV/          ← Industrial computer vision
+    ├── EyePhone_App/         ← Animated robot eyes (Android)
     ├── ORION/                ← Multi-camera AI platform
-    └── Panel_Scanner_IOS/    ← iOS panel scanner app (open source)
+    ├── Panel_Scanner_IOS/    ← iOS panel scanner app
+    └── Project_Recorder/     ← Job site video recorder (iOS)
 ```
 
 ---
@@ -231,7 +302,8 @@ As the **principal engineer and sole developer** across these systems, I maintai
 ### Full-Stack Implementation
 - **Backend:** Python (FastAPI, Flask), async/await patterns, ORM design
 - **Frontend:** Web interfaces (HTML/CSS/JS), real-time dashboards
-- **Mobile:** Swift + SwiftUI, ARKit, CoreML on-device inference
+- **iOS:** Swift + SwiftUI, ARKit, CoreML on-device inference
+- **Android:** Java, WebView + GSAP, ML Kit, CameraX, WebSocket
 - **Embedded:** Raspberry Pi, Arduino, PLC integration
 
 ### ML/AI Engineering
