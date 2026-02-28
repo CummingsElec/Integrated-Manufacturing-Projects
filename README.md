@@ -6,10 +6,11 @@
 
 <br/>
 
-[![Projects](https://img.shields.io/badge/Projects-6-0A66C2?style=for-the-badge)](Projects/)
+[![Projects](https://img.shields.io/badge/Projects-7-0A66C2?style=for-the-badge)](Projects/)
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![Swift](https://img.shields.io/badge/Swift-5.9-F05138?style=for-the-badge&logo=swift&logoColor=white)](https://swift.org)
 [![Java](https://img.shields.io/badge/Java-17-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://openjdk.org)
+[![Kotlin](https://img.shields.io/badge/Kotlin-Compose-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)](https://kotlinlang.org)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
 <br/>
@@ -130,6 +131,27 @@ This is a **public-facing portfolio** showcasing software systems I've architect
 
 </td>
 </tr>
+<tr>
+<td width="50%" align="center">
+
+<a href="Projects/CEIM_Field_Display/">
+<img src="Projects/CEIM_Field_Display/CEIM_Field_Display.png" alt="CEIM Field Display" width="200"/>
+</a>
+
+**[CEIM Field Display](Projects/CEIM_Field_Display/)**<br/>
+*Digital Signage & Kiosk Management*
+
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
+![Compose](https://img.shields.io/badge/Compose-4285F4?style=flat-square)
+![xAI](https://img.shields.io/badge/Grok_AI-FF6F00?style=flat-square)
+
+</td>
+<td width="50%" align="center">
+
+&nbsp;
+
+</td>
+</tr>
 </table>
 
 ---
@@ -225,6 +247,21 @@ An iOS app for recording walkthrough videos on job sites with automatic electric
 
 ---
 
+### CEIM Field Display
+**Digital Signage, Kiosk Management & AI Field Assistant for Android**
+
+A Kotlin Compose Android app that combines full-screen digital signage with kiosk device management and an AI-powered field assistant. Features dual-slide crossfade transitions with per-slide customization, Device Owner kiosk lockdown with multi-app whitelisting (Autodesk Vault, PlanGrid, Bluebeam), and an xAI Grok-powered chat for NEC code lookups and electrical field questions. Includes a floating overlay service for navigating back from external kiosk apps.
+
+**Key Outcomes:**
+- Single app controls signage, kiosk lockdown, and field reference tools
+- xAI Grok AI assistant for instant NEC code and spec lookups on-site
+- Multi-app kiosk pipeline with floating overlay navigation
+- Boot auto-start and passcode security for unattended deployments
+
+📁 [View Project Details →](Projects/CEIM_Field_Display/)
+
+---
+
 ## Technical Highlights
 
 ### Computer Vision & Machine Learning
@@ -249,10 +286,12 @@ An iOS app for recording walkthrough videos on job sites with automatic electric
 - **Offline-First Design** — Full functionality without network connectivity
 
 ### Android Development
+- **Jetpack Compose** — Modern declarative UI with Kotlin for signage and kiosk management
 - **WebView + GSAP Animation** — 60fps expressive eye animations with 3D depth effects
 - **ML Kit Face Detection** — On-device face tracking with gaze following and expression mirroring
-- **WebSocket Remote Control** — Network-accessible command interface for mood, gaze, and theme
-- **Kiosk Mode** — Device Owner / Lock Task Mode with passcode protection and boot auto-start
+- **Kiosk Mode** — Device Owner / Lock Task Mode with multi-app whitelisting and boot auto-start
+- **Floating Overlay Service** — System alert window for persistent navigation across kiosk apps
+- **xAI Grok Integration** — AI field assistant for NEC codes, wiring specs, and construction queries
 - **Sensor Integration** — IMU (accelerometer + gyroscope) for tilt-based gaze control
 
 ### Backend & Infrastructure
@@ -278,6 +317,7 @@ An iOS app for recording walkthrough videos on job sites with automatic electric
 ├── README.md                 ← You are here
 ├── LICENSE                   ← MIT + third-party notices
 └── Projects/
+    ├── CEIM_Field_Display/   ← Digital signage & kiosk (Android)
     ├── CERBERUS/             ← Robotic panel documentation
     ├── Cummings_CV/          ← Industrial computer vision
     ├── EyePhone_App/         ← Animated robot eyes (Android)
@@ -303,7 +343,7 @@ As the **principal engineer and sole developer** across these systems, I maintai
 - **Backend:** Python (FastAPI, Flask), async/await patterns, ORM design
 - **Frontend:** Web interfaces (HTML/CSS/JS), real-time dashboards
 - **iOS:** Swift + SwiftUI, ARKit, CoreML on-device inference
-- **Android:** Java, WebView + GSAP, ML Kit, CameraX, WebSocket
+- **Android:** Kotlin Compose + Java, ML Kit, Kiosk Management, xAI Grok
 - **Embedded:** Raspberry Pi, Arduino, PLC integration
 
 ### ML/AI Engineering
