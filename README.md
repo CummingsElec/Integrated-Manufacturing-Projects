@@ -6,7 +6,7 @@
 
 <br/>
 
-[![Projects](https://img.shields.io/badge/Projects-7-0A66C2?style=for-the-badge)](Projects/)
+[![Projects](https://img.shields.io/badge/Projects-8-0A66C2?style=for-the-badge)](Projects/)
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![Swift](https://img.shields.io/badge/Swift-5.9-F05138?style=for-the-badge&logo=swift&logoColor=white)](https://swift.org)
 [![Java](https://img.shields.io/badge/Java-17-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://openjdk.org)
@@ -148,7 +148,16 @@ This is a **public-facing portfolio** showcasing software systems I've architect
 </td>
 <td width="50%" align="center">
 
-&nbsp;
+<a href="Projects/Conduit_Reader/">
+<img src="Projects/Conduit_Reader/Conduit_Reader.png" alt="Conduit Reader" width="200"/>
+</a>
+
+**[Conduit Reader](Projects/Conduit_Reader/)**<br/>
+*Conduit Bend Verification*
+
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
+![CameraX](https://img.shields.io/badge/CameraX-00C7B7?style=flat-square)
+![ARCore](https://img.shields.io/badge/ARCore-FF6F00?style=flat-square)
 
 </td>
 </tr>
@@ -262,6 +271,21 @@ A Kotlin Compose Android app that combines full-screen digital signage with kios
 
 ---
 
+### Conduit Reader
+**Conduit Bend Verification via Computer Vision**
+
+A Kotlin Compose Android tablet app that verifies conduit bend angles, offsets, and saddles against configurable tolerances using the device camera and an off-device inference server. Supports 10 bend templates (single bends at standard angles, offsets, 3/4-bend saddles, kicks, and custom), multiple scale methods (AprilTag calibration, ARCore depth, known EMT diameter), and a full traceability system stamping every inspection with operator, building, unit, station, and timestamp.
+
+**Key Outcomes:**
+- Instant pass/fail bend verification — seconds vs minutes of manual checking
+- 10 bend templates covering all standard conduit configurations
+- Tolerance engine with configurable angle (±2°) and length (±1/4") thresholds
+- Integrated into CEIM Field Display kiosk pipeline on the tablet
+
+📁 [View Project Details →](Projects/Conduit_Reader/)
+
+---
+
 ## Technical Highlights
 
 ### Computer Vision & Machine Learning
@@ -319,6 +343,7 @@ A Kotlin Compose Android app that combines full-screen digital signage with kios
 └── Projects/
     ├── CEIM_Field_Display/   ← Digital signage & kiosk (Android)
     ├── CERBERUS/             ← Robotic panel documentation
+    ├── Conduit_Reader/       ← Conduit bend verification (Android)
     ├── Cummings_CV/          ← Industrial computer vision
     ├── EyePhone_App/         ← Animated robot eyes (Android)
     ├── ORION/                ← Multi-camera AI platform
